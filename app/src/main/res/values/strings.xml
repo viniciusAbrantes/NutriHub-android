@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">NutriHub</string>
+
+    <!--Patient List Screen-->
+    <string name="patients_nav">Patients</string>
+    <string name="no_patients_registered">Your patients will be listed here</string>
+    <string name="no_patients_found">No patients found</string>
+    <string name="add_patient_description">Add patient</string>
+    <string name="search_patients">Search patients</string>
+    <string name="delete_patient_dialog_title">Delete %1$s?</string>
+    <string name="delete_patient_dialog_description">Are you sure you want to delete %1$s All data will be lost.</string>
+    <string name="patient_last_update_date">Last updated on %1$s</string>
+    <string name="patient_options_content_description">See options for patients</string>
+    <string name="patient_delete_option">Delete patient</string>
+    <string name="patient_edit_option">Edit patient</string>
+    <string name="patient_add_meal_plan_option">Add meal plan</string>
+    <string name="patient_edit_meal_plan_option">Edit meal plan</string>
+    <string name="create_from_template_plan_button">Use template</string>
+    <string name="create_from_template_description">You can create the plan based on one of the templated</string>
+    <string name="create_new_plan_button">New plan</string>
+    <string name="create_new_plan_description">Or you can create a new plan from the scratch</string>
+
+    <!--Add/Edit Patient Screen-->
+    <string name="patient_info_screen_title">Patient Information</string>
+    <string name="patient_name_placeholder">Name</string>
+    <string name="patient_email_placeholder">E-mail</string>
+    <string name="patient_age_placeholder">Age</string>
+    <string name="patient_height">Height: %1$.2f meters</string>
+    <string name="patient_weight">Weight: %1$.2f kg</string>
+    <string name="patient_sex">Sex:</string>
+
+    <!--Meal Plan List Screen-->
+    <string name="meal_plans_nav">Meal Plans</string>
+    <string name="no_meal_plans_registered">Your meal plans will be listed here</string>
+    <string name="add_meal_plan_description">Create a new meal plan</string>
+    <string name="plan_options_content_description">See options for plan</string>
+    <string name="plan_delete_option">Delete plan</string>
+    <string name="plan_edit_option">Edit plan</string>
+    <string name="delete_plan_dialog_title">Delete plan?</string>
+    <string name="delete_plan_dialog_description">@string/delete_patient_dialog_description</string>
+    <string name="food_text">- %1$d%2$s %3$s</string>
+
+    <!--Add/Edit Meal Plan Screen-->
+    <string name="plan_screen_title">Meal Plan</string>
+    <string name="plan_name_placeholder">Plan name</string>
+    <string name="meal_name_placeholder">Meal name</string>
+    <string name="food_name_placeholder">Item name</string>
+    <string name="food_unit_placeholder">g</string>
+    <string name="add_meal_button">Add meal</string>
+    <string name="add_food_button">Add item</string>
+    <string name="meal_edit_button">Edit meal</string>
+
+    <!--Other-->
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_close">Close</string>
+</resources>
