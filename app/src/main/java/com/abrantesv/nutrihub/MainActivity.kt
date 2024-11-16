@@ -208,7 +208,7 @@ class MainActivity : ComponentActivity() {
     }
 
     companion object {
-        val TAG = MainActivity::class.simpleName
+        private val TAG = MainActivity::class.simpleName
     }
 }
 

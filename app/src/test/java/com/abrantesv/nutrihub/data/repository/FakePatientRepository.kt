@@ -118,6 +118,6 @@ class FakePatientRepository : PatientRepository {
     fun getFoods() = foods
 
     companion object {
-        const val INVALID_ID = -1L
+        private const val INVALID_ID = -1L
     }
 }

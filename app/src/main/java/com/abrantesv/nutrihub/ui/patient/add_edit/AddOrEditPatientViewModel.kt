@@ -160,18 +160,18 @@ class AddOrEditPatientViewModel @Inject constructor(
     }
 
     companion object {
-        val TAG = AddOrEditPatientViewModel::class.simpleName
+        private val TAG = AddOrEditPatientViewModel::class.simpleName
         const val INVALID_AGE = -1
-        private const val MAX_AGE = 100
         const val MIN_WEIGHT = 0f
         const val MAX_WEIGHT = 200f
         const val MIN_HEIGHT = 0f
         const val MAX_HEIGHT = 2.5f
-        const val SEX_MALE_INT = 0
-        const val SEX_FEMALE_INT = 1
-        const val SEX_OTHER_INT = 9
         const val SEX_MALE_TEXT = "Male"
         const val SEX_FEMALE_TEXT = "Female"
         const val SEX_OTHER_TEXT = "Other"
+        private const val MAX_AGE = 100
+        private const val SEX_MALE_INT = 0
+        private const val SEX_FEMALE_INT = 1
+        private const val SEX_OTHER_INT = 9
     }
 }

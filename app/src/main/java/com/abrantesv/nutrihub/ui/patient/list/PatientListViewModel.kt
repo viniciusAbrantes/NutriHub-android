@@ -152,6 +152,6 @@ class PatientListViewModel @Inject constructor(
     }
 
     companion object {
-        val TAG = PatientListViewModel::class.simpleName
+        private val TAG = PatientListViewModel::class.simpleName
     }
 }

@@ -239,8 +239,8 @@ class AddOrEditPlanViewModel @Inject constructor(
     }
 
     companion object {
-        val TAG = AddOrEditPlanViewModel::class.simpleName
-        const val DEFAULT_ITEM_NAME = "item"
-        const val DEFAULT_ITEM_UNIT = "g"
+        private val TAG = AddOrEditPlanViewModel::class.simpleName
+        private const val DEFAULT_ITEM_NAME = "item"
+        private const val DEFAULT_ITEM_UNIT = "g"
     }
 }

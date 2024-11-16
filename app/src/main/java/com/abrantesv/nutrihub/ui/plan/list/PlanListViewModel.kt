@@ -98,6 +98,6 @@ class PlanListViewModel @Inject constructor(
     }
 
     companion object {
-        val TAG = PlanListViewModel::class.simpleName
+        private val TAG = PlanListViewModel::class.simpleName
     }
 }
