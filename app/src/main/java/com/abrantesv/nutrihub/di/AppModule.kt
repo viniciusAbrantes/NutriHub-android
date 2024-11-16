@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.room.Room
 import com.abrantesv.nutrihub.data.patient.PatientDatabase
 import com.abrantesv.nutrihub.data.patient.PatientRepository
+import com.abrantesv.nutrihub.data.patient.PatientRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -24,7 +25,7 @@ object AppModule {
     @Provides
     @Singleton
     fun providePatientRepository(db: PatientDatabase): PatientRepository {
-        return PatientRepository(db.dao)
+        return PatientRepositoryImpl(db.dao)
     }
 
 }

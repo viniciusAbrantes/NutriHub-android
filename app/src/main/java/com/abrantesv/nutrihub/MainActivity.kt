@@ -37,10 +37,10 @@ import com.abrantesv.nutrihub.data.entities.Meal
 import com.abrantesv.nutrihub.data.entities.Patient
 import com.abrantesv.nutrihub.data.entities.Plan
 import com.abrantesv.nutrihub.data.patient.PatientRepository
-import com.abrantesv.nutrihub.ui.plan.list.PlanListScreen
 import com.abrantesv.nutrihub.ui.patient.add_edit.AddOrEditPatientScreen
 import com.abrantesv.nutrihub.ui.patient.list.PatientListScreen
 import com.abrantesv.nutrihub.ui.plan.add_edit.AddOrEditPlanScreen
+import com.abrantesv.nutrihub.ui.plan.list.PlanListScreen
 import com.abrantesv.nutrihub.util.Routes
 import com.abrantesv.nutrihub.util.Routes.DEFAULT_INVALID_ID
 import com.abrantesv.nutrihub.util.Routes.PATIENT_ID_ARGUMENT
@@ -48,6 +48,7 @@ import com.abrantesv.nutrihub.util.Routes.PLAN_ID_ARGUMENT
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -55,8 +56,10 @@ import javax.inject.Inject
 class MainActivity : ComponentActivity() {
     @Inject
     lateinit var repository: PatientRepository
+
     private fun initializeDatabase() {
         CoroutineScope(Dispatchers.IO).launch {
+            if (repository.getAllPatients().firstOrNull()?.isEmpty() == false) return@launch
             val patients = listOf(
                 Patient(
                     null,
@@ -68,7 +71,14 @@ class MainActivity : ComponentActivity() {
                     1.73f,
                     78f,
                 ), Patient(
-                    null, "Julianne Silva Luz", null, "juliannesluz@teste.com", 23, 1, 1.68f, 78f
+                    null,
+                    "Julianne Silva",
+                    null,
+                    "julianne_silva@teste.com",
+                    23,
+                    1,
+                    1.68f,
+                    68f
                 ), Patient(
                     null,
                     "Maria Souza Lima",

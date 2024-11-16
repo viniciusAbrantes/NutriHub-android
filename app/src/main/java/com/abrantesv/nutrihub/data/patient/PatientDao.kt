@@ -8,8 +8,8 @@ import androidx.room.Query
 import androidx.room.Transaction
 import com.abrantesv.nutrihub.data.entities.Food
 import com.abrantesv.nutrihub.data.entities.Meal
-import com.abrantesv.nutrihub.data.entities.Plan
 import com.abrantesv.nutrihub.data.entities.Patient
+import com.abrantesv.nutrihub.data.entities.Plan
 import com.abrantesv.nutrihub.data.entities.relations.MealWithFoods
 import com.abrantesv.nutrihub.data.entities.relations.PlanAndPatient
 import com.abrantesv.nutrihub.data.entities.relations.PlanWithMeals

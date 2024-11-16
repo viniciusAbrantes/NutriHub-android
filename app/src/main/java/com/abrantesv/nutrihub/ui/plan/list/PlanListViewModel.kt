@@ -3,7 +3,6 @@ package com.abrantesv.nutrihub.ui.plan.list
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.abrantesv.nutrihub.data.entities.Food
 import com.abrantesv.nutrihub.data.entities.Meal
 import com.abrantesv.nutrihub.data.entities.Plan
 import com.abrantesv.nutrihub.data.patient.PatientRepository

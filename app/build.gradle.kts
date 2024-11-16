@@ -75,9 +75,12 @@ dependencies {
     //Dagger Hilt
     implementation("com.google.dagger:hilt-android:2.49")
     kapt("com.google.dagger:hilt-compiler:2.49")
-    //implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
     annotationProcessor("com.google.dagger:hilt-compiler:2.49")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
+
+    //Test dependencies
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("com.google.truth:truth:1.1.3")
 }
 
 kapt {
